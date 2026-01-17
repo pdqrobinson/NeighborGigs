@@ -6,7 +6,12 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "build:ios": "expo build:ios",
+    "build:android": "expo build:android",
+    "prebuild": "expo prebuild",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "test": "jest"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.2.0",
