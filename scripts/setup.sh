@@ -29,7 +29,7 @@ if [ ! -d "NeighborGigs" ]; then
     cd NeighborGigs
 else
     cd NeighborGigs
-    git pull origin master
+    git pull origin main
 fi
 echo "✓ Repository ready"
 echo ""

@@ -210,8 +210,8 @@
 ### Daily Routine
 
 1. **Morning**
-   - `git checkout master`
-   - `git pull origin master`
+   - `git checkout main`
+   - `git pull origin main`
    - `git checkout -b feature/your-task`
 
 2. **Development**
@@ -237,7 +237,7 @@
 
 ```bash
 # Start fresh feature branch
-git checkout master && git pull && git checkout -b feature/new-feature
+git checkout main && git pull && git checkout -b feature/new-feature
 
 # Commit with proper format
 git add . && git commit -m "feat: add phone authentication"
@@ -246,7 +246,7 @@ git add . && git commit -m "feat: add phone authentication"
 git push origin feature/new-feature
 
 # After merge, cleanup
-git checkout master && git pull && git branch -d feature/new-feature
+git checkout main && git pull && git branch -d feature/new-feature
 
 # View recent commits
 git log --oneline --graph -10
