@@ -49,7 +49,62 @@ NeighborGigs/
 - Track task status in real-time
 - Pay only after confirmation
 
-### 3. Trust & Safety
+## Task Templates 📝
+
+Speed up task creation with pre-built templates for common tasks:
+
+- **24 templates** across 4 categories: Errands, Help, Quick Jobs, Delivery
+- **Pre-populated forms** with title, description, price range, and duration
+- **Step-by-step instructions** for common tasks
+- **Tag-based search** to find the right template
+- **Template tracking** to analyze which tasks are most popular
+
+**Quick Start:** See `TASK_TEMPLATES_DEPLOYMENT.md` for integration guide
+
+**Example Templates:**
+- Grocery Pickup, Pharmacy Run, Pet Supplies
+- Furniture Moving, TV Installation, Yard Work
+- Car Wash, Lawn Mowing, Light Cleaning
+- Item Delivery, Document Pickup
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- Bun (for the web dashboard)
+- Supabase project
+
+### Environment Setup
+
+```bash
+# Frontend
+cd neighborgigs-web
+bun install
+
+# Copy env template and configure
+cp .env.example .env
+# Edit .env with your Supabase credentials
+
+# Start dev server
+bun run dev
+```
+
+### Deploy Task Templates
+
+```bash
+# Deploy database migration
+# (see TASK_TEMPLATES_DEPLOYMENT.md for detailed instructions)
+
+# Option A: Run SQL via Supabase Dashboard
+# Copy contents of backend/supabase/migrations/002_task_templates.sql
+
+# Option B: Export from dataset
+cd neighborgigs-task-templates
+python3 scripts/export_to_supabase.py
+```
+
+## Trust & Safety
 - Phone verification required
 - 1-5 star rating system
 - Photo proof for all completed tasks
